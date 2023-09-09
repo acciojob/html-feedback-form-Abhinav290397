@@ -8,48 +8,22 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<table>
-		<caption>Feedback Form</caption>
-		<thead>
-			<tr>
-				<th>Element</th>
-				<th>ID</th>
-				<th>Type</th>
-				<th>Attributes</th>
-				<th>Label Required</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Name</td>
-				<td>name</td>
-				<td>Text</td>
-				<td>minlength="3", maxlength="50", required</td>
-				<td>Yes</td>
-			</tr>
-			<tr>
-				<td>Portfolio</td>
-				<td>portfolio</td>
-				<td><a href = "http://127.0.0.1:5501/18Aug/18Aug.html">click here</td>
-				<td>required</td>
-				<td>Yes</td>
-			</tr>
-			<tr>
-				<td>Favourite Color</td>
-				<td>favColor</td>
-				<td>Color</td>
-				<td>N/A</td>
-				<td>Yes</td>
-			</tr>
-			<tr>min="1", max="100"
-				<td>Likeness</td>
-				<td>likeness</td>
-				<td>Range</td>
-				<td>min="1", max="100"</td>
-				<td>Yes</td>
-			</tr>
-		</tbody>
-	</table>
+	<h2>Feedback Form</h2>
+	<form>
+		<label for="name">Name</label><br>
+		<input type = "text" id = "name" name = "name" minlength = "3" maxlength = "50" required>
+
+		<label for = "portfolio">Portfolio</label><br>
+		<input type = "url" id = "portfolio" name = "portfolio" required>
+
+		<label for = "favColor">Favorite Color</label><br>
+		<input type = "color" id = "favColor" name = "favColor">
+
+		<label for = "likeness">Likeness</label><br>
+		<input type = "range" id = "likeness" min = "1" max = "100">
+
+		<input type = "submit" value = "submit">
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
